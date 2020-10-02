@@ -1,14 +1,29 @@
 {
-  "name": "debug2adurl",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "yargs": "^16.0.3"
-  }
+    "name": "debug2adurl",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "0J3",
+    "license": "ISC",
+    "dependencies": {
+        "@types/node": "^14.11.2",
+        "yargs": "^16.0.3"
+    },
+    "devDependencies": {
+        "typescript": "^4.0.3"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/0J3/debug2adurl-for-youtube.git"
+    },
+    "bugs": {
+        "url": "https://github.com/0J3/debug2adurl-for-youtube/issues"
+    },
+    "homepage": "https://github.com/0J3/debug2adurl-for-youtube#readme",
+    "description": "",
+    "bin": {
+        "yt_debug2adurl": "./index"
+    }
 }

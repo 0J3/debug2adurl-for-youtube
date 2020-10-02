@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+        "allowJs": true,
+        "checkJs": true,
+        "declaration": true,
+        "declarationMap": true,
+        "outFile": "index.js"
+    },
+    "exclude": [],
+    "include": ["*","**/*"]
+}
