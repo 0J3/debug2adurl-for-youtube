@@ -1,0 +1,1 @@
+//# sourceMappingURL=watchClipboard.d.ts.map
