@@ -4,6 +4,7 @@ declare const logfile: string;
 declare const watchClipboard: any;
 declare var readline: any;
 declare const fs: any;
+declare const chalk: any;
 declare const clipboard: any;
 declare const yargs: any;
 declare const argv: any;

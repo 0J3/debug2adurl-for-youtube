@@ -1,9 +1,10 @@
 #!/usr/bin/env electron
 var d = new Date();
-var logfile = __dirname + "/log_" + d.getDate() + "." + (d.getMonth() + 1) + "." + d.getFullYear() + ".txt";
+var logfile = __dirname + "/log/log_" + d.getDate() + "." + (d.getMonth() + 1) + "." + d.getFullYear() + ".txt";
 var watchClipboard = require("watchClipboard");
 var readline = require('readline');
 var fs = require("fs");
+var chalk = require("chalk");
 var clipboard = require('electron').clipboard;
 var yargs = require("yargs");
 var argv = yargs.argv;
@@ -20,7 +21,10 @@ function run(json) {
         throw new Error("No ID");
     }
 }
-if (argv.watch || argv.w) {
+if (argv["ඞ"]) {
+    throw new Error("Sorry, but the unicode symbol for the among us character (ඞ) aswell as all the other unicode characters for this are not supported in a terminal, therefor it doesnt work. Sorry!");
+}
+else if (argv.watch || argv.w) {
     var output = "Please copy the debug info. It will load it from your clipboard.\nSince you specified the watch flag, it will auto-update to the latest information.\n----------------------------------------------------------------";
     console.log(output);
     fs.appendFileSync("" + logfile, output + "\n");

@@ -6,3 +6,6 @@ node_modules
 **/log_*.txt
 log_*
 log_*.txt
+
+tskeep.d.ts
+tskeep.d.ts.map

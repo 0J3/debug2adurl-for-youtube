@@ -1,12 +1,14 @@
 #!/usr/bin/env electron
 
 const d = new Date()
-const logfile: string = `${__dirname}/log_${d.getDate()}.${d.getMonth()+1}.${d.getFullYear()}.txt`
+const logfile: string = `${__dirname}/log/log_${d.getDate()}.${d.getMonth()+1}.${d.getFullYear()}.txt`
 
 const watchClipboard = require("watchClipboard")
 var readline = require('readline')
 
 const fs = require("fs")
+
+const chalk = require("chalk")
 
 const {
     clipboard
@@ -36,7 +38,9 @@ function run(json:any) {
     }
 }
 
-if (argv.watch || argv.w) {
+if (argv["ඞ"]){
+    throw new Error("Sorry, but the unicode symbol for the among us character (ඞ) aswell as all the other unicode characters for this are not supported in a terminal, therefor it doesnt work. Sorry!")
+} else if (argv.watch || argv.w) {
     let output = `Please copy the debug info. It will load it from your clipboard.
 Since you specified the watch flag, it will auto-update to the latest information.
 ----------------------------------------------------------------`
