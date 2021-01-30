@@ -3,7 +3,7 @@
 	"version": "0.0.0",
 	"main": "bin/index.js",
 	"scripts": {
-		"test": "",
+		"test": "exit 0",
 		"start": "electron ."
 	},
 	"author": "0J3",
