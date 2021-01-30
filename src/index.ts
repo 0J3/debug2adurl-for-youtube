@@ -42,6 +42,7 @@ function run(json: any) {
 }
 
 if (argv['ඞ']) {
+	//  i wanted to put an easter egg here but uhh shit died
 	throw new Error(
 		'Sorry, but the unicode symbol for the among us character (ඞ) aswell as all the other unicode characters for this are not supported in a terminal, therefor it doesnt work. Sorry!'
 	);

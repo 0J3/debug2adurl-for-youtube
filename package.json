@@ -1,13 +1,13 @@
 {
 	"name": "debug2adurl",
-	"version": "1.0.0",
+	"version": "0.0.0",
 	"main": "bin/index.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"start": "electron ."
 	},
 	"author": "0J3",
-	"license": "ISC",
+	"license": "AGPL-3.0-or-later",
 	"dependencies": {
 		"@types/node": "^14.11.2",
 		"chalk": "^4.1.0",
